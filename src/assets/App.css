@@ -1,0 +1,99 @@
+
+.text-red {
+  color: #ff1414;
+}
+
+a {
+  color: rgb(189, 189, 189);
+  text-decoration: none;
+}
+
+a:hover {
+  color: azure;
+}
+
+.card {
+  background-color: rgb(30, 30, 30);
+  color: azure;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.btn-danger {
+  background-color: #ff1414 !important;
+  visibility: visible !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-small {
+  font-size: x-small;
+}
+
+.full-width {
+  width: 100vw;
+  height: 40vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fill {
+  object-fit: cover;
+}
+body {
+  background-color: rgb(30, 30, 30);
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: xx-large;
+  color: azure;
+}
+
+.img-max{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* CARD HOVER */
+
+.img__wrap {
+  position: relative;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(30, 30, 30, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
